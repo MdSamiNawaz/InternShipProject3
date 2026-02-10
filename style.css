@@ -131,6 +131,7 @@ section {
   line-height: 1.25;
   margin-bottom: 16px;
 
+
 }
 
 .hero-content p {
@@ -807,9 +808,10 @@ body {
   .navbar{
     flex-wrap: wrap;
   }
-  .ero-content h1{
+  .hero-content h1{
     padding-top: 20px;
   }
+ 
 
   .navbar ul{
     flex-wrap: wrap;
@@ -817,4 +819,14 @@ body {
     gap:15px;
   }
 
+}
+
+@media (max-width: 480px){
+  .hero-content h1{
+    font-size: 28px;
+  }
+ .about-content h1{
+     font-size: 32px;
+    
+  }
 }
