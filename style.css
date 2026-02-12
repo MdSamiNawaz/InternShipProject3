@@ -26,6 +26,24 @@ section {
     z-index:999;
 }
 
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0px;
+  height: 2px;
+  background: #f9c74f;
+  transition: width 0.3s ease;
+}
+
+/* hover effect */
+.nav a:hover::after {
+  width: 100%;
+}
+
+
 .navbar{
     max-width:1250px;
     margin:auto;
@@ -63,6 +81,63 @@ section {
     color:#f9c74f;
 }
 
+.RequestQuote {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  background: white;    
+  padding:8px 10px;
+  border-radius:7px;
+  font-weight:500;
+  cursor:pointer;          
+  border: 2px solid #f9c74f;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.RequestQuote img {
+  width:20px;
+  height: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.RequestQuote a {
+  
+   color: black;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+  z-index: 1;
+}
+
+
+.RequestQuote::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #f9c74f;
+  transition: width 0.4s ease;
+  z-index: 0;
+}
+
+
+.RequestQuote:hover::before {
+  width: 100%;
+}
+
+
+
+
+
+
+
+/*
 .RequestQuote{
     background:#f9c74f;
     color:#000;
@@ -106,7 +181,7 @@ section {
   transition: transform 0.3s ease;
 }
 
-
+*/
 
 .hero {
   display: flex;
@@ -201,6 +276,8 @@ section {
 .hero-image img:hover {
   transform: scale(1.05);
 }
+
+
 
 
 
@@ -314,14 +391,42 @@ section {
 
 
 
+.about-boxes div::before { 
+content: "";
+position: absolute;
+inset: 0;
+border: 2px solid #D4AF37; border-radius: 15px; 
+transform: scale(0); 
+transition: transform 0.3s ease; 
+
+}
+
+.about-boxes div:hover::before { 
+  transform: scale(1);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .Our-service {
   background: radial-gradient(circle at top, #09000f, #2e1569);
-  padding: 80px 20px;
+  padding: 80px 40px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 30px;
   justify-content: center;   
   font-family: 'Segoe UI', sans-serif;
@@ -372,6 +477,45 @@ section {
 }
 
 
+
+.Our-service div {
+  background: #111;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+
+.Our-service div img {
+  width: 80px;
+  transition: transform 0.4s ease;
+}
+
+
+
+.Our-service div:hover img {
+  transform: scale(1.1);
+}
+
+
+.Our-service div::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid #ff005d;
+  border-radius: 12px;
+  transform: scale(0);
+  transition: transform 0.4s ease;
+}
+
+.Our-service div:hover::before {
+  transform: scale(1);
+}
 
 
 
@@ -531,6 +675,9 @@ section {
 
 
 
+
+
+
 .testimonials {
   padding: 80px 20px;
   background: linear-gradient(135deg, #0b0b1e, #1a0835);
@@ -649,7 +796,6 @@ section {
 
 .slider {
   width: 100%;
-  overflow: hidden;
 }
 
 .slide-track {
@@ -690,6 +836,7 @@ section {
 
 .slider:hover .slide-track {
   animation-play-state: paused;
+ 
 }
 
 .whatsapp-float {
