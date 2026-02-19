@@ -1,4 +1,6 @@
- /*
+
+/*
+
 const title = document.querySelector(".title");
 const originalText = title.innerHTML;   
 title.innerHTML = "";                  
@@ -14,9 +16,7 @@ function typeEffect() {
 }
 
 typeEffect();
- 
 
-*/
 
 
 const headings = document.querySelectorAll(".hero-content h1");
@@ -30,5 +30,10 @@ headings.forEach((heading, index) => {
     heading.classList.add("active");
   }, index * 1500); 
 });
+*/
 
+ 
 
+const Ny = document.querySelector(".year");
+
+Ny.textContent = new Date().getFullYear();
