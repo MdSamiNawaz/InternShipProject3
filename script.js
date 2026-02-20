@@ -32,7 +32,7 @@ headings.forEach((heading, index) => {
 });
 */
 
- const words = [" Video Editing |", "Posters |", "Reels |", "Social Media |", "Social Media Management"];
+ const words = [" Video Editing ", "Posters ", "Reels ", "Social Media ", "Social Media Management"];
 
  const colors = ["#00ffee", "#d0ff00", "#ffd900", "#ff0059", "#00a6ff"];
  
