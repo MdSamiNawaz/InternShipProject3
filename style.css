@@ -186,6 +186,14 @@ section {
 */
 
 
+#text{
+  font-size: 38px;
+  padding-bottom: 10px;
+  color: #00ffd0;
+  font-weight: bold;
+}
+
+
 
 .hero {
   display: flex;
