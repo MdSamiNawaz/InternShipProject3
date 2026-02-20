@@ -1103,6 +1103,7 @@ a{
     
   }
 
+
   .hero-content{
     max-width:100%;
   }
@@ -1138,7 +1139,7 @@ body {
   }
   .hero-content h1{
     padding-top: 50px;
-    font-size: 30px;
+    font-size: 40px;
   }
  
 
@@ -1146,6 +1147,10 @@ body {
     flex-wrap: wrap;
     justify-content:center;
     gap:15px;
+  }
+
+  #text{
+    font-size: 24px;
   }
 
 }
@@ -1177,12 +1182,12 @@ body {
   
 
  .about-content h1{
-     font-size: 32px;
+     font-size: 28px;
   }
 
   .hero-content h1{
     margin-top: 35px;
-    font-size: 20px;
+    font-size: 28px;
 
   }
   .navbar ul{
@@ -1229,6 +1234,15 @@ padding-right: 18px;
 }
 .about-image{
   padding-right: 12px;
+}
+
+
+#text{
+  font-size: 26px;
+}
+
+.Our-Portfolio h1{
+  font-size: 23px;
 }
 
 }
